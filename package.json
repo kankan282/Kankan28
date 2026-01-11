@@ -1,0 +1,24 @@
+{
+  "name": "wingo-predictor-api",
+  "version": "1.0.0",
+  "description": "High-performance WinGo 1M prediction engine",
+  "main": "api/predict.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node api/predict.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "redis": "^4.6.10",
+    "mathjs": "^11.11.1",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "vercel": "^28.18.4"
+  }
+}
