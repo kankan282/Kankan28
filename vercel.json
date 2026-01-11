@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/predict.js": {
+      "maxDuration": 10,
+      "memory": 1024
+    },
+    "api/history.js": {
+      "maxDuration": 5,
+      "memory": 512
+    }
+  },
+  "rewrites": [
+    { "source": "/api/predict", "destination": "/api/predict.js" },
+    { "source": "/api/history", "destination": "/api/history.js" }
+  ]
+}
